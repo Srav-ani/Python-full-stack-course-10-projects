@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Management</title>
+
+<style>
+
+body{
+font-family:Arial;
+}
+
+nav{
+background:#333;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin-right:20px;
+text-decoration:none;
+font-size:18px;
+}
+
+table{
+margin-top:20px;
+border-collapse:collapse;
+}
+
+td,th{
+padding:10px;
+border:1px solid black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="/add_student/">Add Student</a>
+
+<a href="/add_marks/">Add Marks</a>
+
+<a href="/view_student/">View Student</a>
+
+<a href="/edit_details/">Edit details</a>
+
+
+
+</nav>
+
+<hr>
+
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Add Marks</h2>
+
+<form method="post">
+{% csrf_token %}
+
+Roll Number<br>
+<input type="text" name="roll"><br><br>
+
+Telugu<br>
+<input type="number" name="telugu"><br><br>
+
+English<br>
+<input type="number" name="english"><br><br>
+
+Maths<br>
+<input type="number" name="maths"><br><br>
+
+Science<br>
+<input type="number" name="science"><br><br>
+
+<button type="submit">Save Marks</button>
+
+</form>
+
+{% endblock %}
